@@ -21,6 +21,7 @@ async def on_ready():
     for guild in client.guilds:
         print(str(guild.id) + ", " + guild.name)
         if guild.id == GuidId:
+            print("Start fetching member id from" + str(guild))
             UserList = guild.member
             for m in UserList:
                 print(str(m.id) + ", " + m.name)   
