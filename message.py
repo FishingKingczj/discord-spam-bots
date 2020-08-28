@@ -6,7 +6,7 @@ import random
 sys.path.append("./.")
 
 client = discord.Client()
-token = 'NzQzNzY0NzQ4NDc4MzE2NTQ1.X0j2gw.gtcHnmQc00Z6wf3LnYYVSnVT7eA'
+token = 'NzQzNzY0NzQ4NDc4MzE2NTQ1.X0j5Bg.4XhQkwyAmlW9PYJOOUMHG0MXOCA'
 GuidId = '713732221873291264'
 UserList = []
 emojiList = [':smile:', ':laughing:', ':slight_smile:', ':hot_pepper:', ':smirk:']
@@ -51,6 +51,7 @@ async def on_ready():
                     sys.stdout.write("\rComplete!                    \n")
                 except Exception:
                     print('Something went wrong (;3;) relaunching...')
+    client.logout()
 
 print('Start running client...')
 client.run(token, bot=False)
