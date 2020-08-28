@@ -6,7 +6,7 @@ import random
 sys.path.append("./.")
 
 client = discord.Client()
-token = 'NzQzNzY0NzQ4NDc4MzE2NTQ1.X0jlwA.PWoUjzrd-o9KDWcD1qWIcU6TKrE'
+token = 'NzQzNzY0NzQ4NDc4MzE2NTQ1.X0j2gw.gtcHnmQc00Z6wf3LnYYVSnVT7eA'
 GuidId = '713732221873291264'
 UserList = []
 emojiList = [':smile:', ':laughing:', ':slight_smile:', ':hot_pepper:', ':smirk:']
@@ -20,7 +20,7 @@ async def on_ready():
     UserList = []
     for guild in client.guilds:
         print(str(guild.id) + ", " + guild.name)
-        if guild.id == GuidId:
+        if str(guild.id) == GuidId:
             print("Start fetching member id from" + str(guild))
             UserList = guild.member
             for m in UserList:
