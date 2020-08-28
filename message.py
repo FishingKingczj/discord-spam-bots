@@ -6,7 +6,7 @@ import random
 sys.path.append("./.")
 
 client = discord.Client()
-token = 'NzQzNzY0NzQ4NDc4MzE2NTQ1.X0j5Bg.4XhQkwyAmlW9PYJOOUMHG0MXOCA'
+token = 'NzQzNzY0NzQ4NDc4MzE2NTQ1.X0j6zw.rhr2i6MLbk6qCi4Dtui2p_GlXQ4'
 GuidId = '713732221873291264'
 UserList = []
 emojiList = [':smile:', ':laughing:', ':slight_smile:', ':hot_pepper:', ':smirk:']
